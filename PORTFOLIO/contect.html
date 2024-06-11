@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Boxes</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .box {
+         width: 35%; 
+        
+        margin-bottom: 20px;
+        /* border: 1px solid #ccc; */
+        padding: 10px;
+        /* background-color: white; */
+        margin-left: 90px;
+        margin-right: 90px;
+        filter: drop-shadow(10px 20px 20px blue);
+    }
+    .box img {
+        max-width: 100%;
+        height: auto;
+    }
+    .box:nth-child(odd) {
+        margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+        .box {
+            width: 100%;
+        }
+        .box:nth-child(odd) {
+            margin-right: 0;
+        }
+    }
+    .container p{
+        font-size: x-large;
+    }
+    p a{
+        text-decoration: none;
+    }
+    header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Contact Information</h1>
+      </header>
+<div class="container">
+    <div class="box">
+        <h2>Email</h2>
+        <img src="email.jpg" alt="Email Symbol">
+        <p><a href="mailto:kavitajakhar9571@gmail.com">kavitajakhar9571@gmail.com</a></p>
+    </div>
+    <div class="box">
+        <h2>Contact Number</h2>
+        <img src="contect.png" alt="Phone Symbol">
+        <p>7357020932</p>
+    </div>
+    <div class="box">
+        <h2>GitHub</h2>
+        <img src="github.png" alt="GitHub Symbol">
+        <p><a href="https://github.com/jakharkavita" target="_blank">jakharkavita</a></p>
+    </div>
+    <div class="box">
+        <h2>LinkedIn ID</h2>
+        <img src="linke.png" alt="LinkedIn Symbol">
+        <p><a href="https://www.linkedin.com/in/kavita-jakhar-936082259"target="_blank">kavita jakhar</a></p>
+    </div>
+    <div class="box">
+        <h2>location</h2>
+        <img src="location.png" alt="Phone Symbol">
+        <p>ratanada jodhpur</p>
+    </div>
+    <div class="box">
+        <h2>Code chef</h2>
+        <img src="code chef.jpg" alt="Phone Symbol">
+        <p><a href="https://www.codechef.com/users/kavitajakhar7571" target="_blank">kavitajakhar7571</a></p>
+    </div>
+</div>
+
+</body>
+</html>
